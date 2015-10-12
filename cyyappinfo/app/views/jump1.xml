@@ -1,0 +1,12 @@
+<Alloy>
+	<Collection src="eventDetail" />
+	<Window title="Tab 1" id="win">
+		<TableView  dataCollection="eventDetail" dataFilter="filterFunction" >
+			<TableViewRow layout="vertical">
+				<ImageView image="{image}" top="20dp" />
+				<Label text="{fullDes}" bottom="20dp" />
+				<Button title="address" bottom="10dp" vid="{venue}" onClick="btClick" />
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

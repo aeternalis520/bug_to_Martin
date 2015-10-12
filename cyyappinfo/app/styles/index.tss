@@ -1,0 +1,41 @@
+"Window": {
+	backgroundColor: "#fff"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+} 
+
+"TextArea": {
+	left: "10dp",
+	right: "10dp" 
+	}
+	
+// "#textArea2": {
+	// value: "Tel: (852) 3411 7400\nFax : (852) 2338 7644\n\nAddress:\nHong Kong Baptist University, Kowloon Tong, Kowloon\n",
+	// autoLink: Titanium.UI.AUTOLINK_PHONE_NUMBERS
+				// }
+
+// "#acHall": {
+	// latitude: 22.341072,
+	// longitude: 114.179645, 
+	// title: "AC Hall",
+	// subtitle: "香港浸会大学大学会堂" 
+	// }
+// 	
+"#mapView": { 
+region: {
+	latitude: 22.337827, longitude: 114.181962,
+	latitudeDelta: 0.006,
+	longitudeDelta: 0.006 
+	}
+}	
+
+

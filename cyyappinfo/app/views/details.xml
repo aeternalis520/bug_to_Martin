@@ -1,0 +1,10 @@
+<Alloy>
+	<Collection src="eventDetail" />
+	
+	<Window>
+		<TableView dataCollection="eventDetail" dataFilter="filterOrganizer" onClick="tableClickjump2" >
+			<TableViewRow  layout="vertical" title="{name}"  fid="{id}" />
+		</TableView>
+	</Window>
+	
+</Alloy>

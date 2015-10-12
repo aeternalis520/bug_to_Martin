@@ -1,0 +1,8 @@
+<Alloy>
+	<Collection src="Venue" />
+	<Window>
+		<TableView dataCollection="eventDetail" dataFilter="filterVenue"  onClick="tableClick4">
+			<TableViewRow  layout="vertical" title="{name}"  fid="{id}" />
+		</TableView>
+	</Window>
+</Alloy>

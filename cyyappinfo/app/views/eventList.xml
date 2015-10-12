@@ -1,0 +1,8 @@
+<Alloy>
+	<Collection src="events" />
+	<Window id="win">
+		<TableView dataCollection="events" dataFilter="filterFunction">
+			<TableViewRow title = "{title}" /> 
+		</TableView>
+	</Window>
+</Alloy>

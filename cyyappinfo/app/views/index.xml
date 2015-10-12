@@ -1,0 +1,70 @@
+<Alloy>
+	<Collection src="eventDetail" />
+	<Collection src="Venue" />
+	<TabGroup>
+		<Tab title="Tab 1" icon="KS_nav_ui.png" id="eventTab1">
+			<Window title="tab1" id="win">
+				<TableView onClick="tableClickjump1" dataCollection="eventDetail" >
+					<TableViewRow layout="vertical" fid="{id}">
+						<ImageView image="{image}" top="20dp" />
+						<Label text="{shortDes}" bottom="20dp" />
+					</TableViewRow>
+				</TableView>
+			</Window>
+		</Tab>
+		<Tab title="Tab 2" icon="KS_nav_views.png" id="eventTab2">
+			<Window title="Tab 2" >
+				<TableView onClick="tableClickdetails" > 
+					<TableViewSection headerTitle=" ">
+						<TableViewRow title="Music facility" fid="Music Society"/> 
+					</TableViewSection>
+					<TableViewSection headerTitle=" ">
+						<TableViewRow title="School of Communication" fid="gis"/>
+					</TableViewSection> 
+					<TableViewSection headerTitle=" ">
+						<TableViewRow title="School of Science" fid="comp"/>
+					</TableViewSection> 
+				</TableView>
+			</Window>
+		</Tab>
+		
+		<Tab title="Venue" icon="KS_nav_views.png" id="eventTab3">
+				<Window title="Tab 3">
+					<TableView dataCollection="Venue" dataTransform="group" onClick="tableClick3">
+						<TableViewSection headerTitle="{SubTitle}">
+							<TableViewRow title = "{VenueName}" fid="{VenueID}" />
+						</TableViewSection>
+					</TableView>
+				</Window>
+		</Tab>
+		<Tab title="Map" icon="KS_nav_views.png" id="eventTab4">
+			<Window title="Map" navBarHidden="true">
+				<Module id="mapView" module="ti.map" method="createView" userLocation="true" 
+					dataCollection="Venue" dataTransform="transformMapData"  onClick="mapClicked">
+					<!-- <Annotation id="acHall"/ > -->
+				</Module>
+			</Window>
+		</Tab>
+
+		<Tab title="Tab5" icon="KS_nav_views.png">
+			<Window title="Tab5">
+				<TableView>
+					<!-- <TableViewSection headerTitle="About HKBU">
+						<TableViewRow>
+							<TextArea value = "Hong Kong Baptist University (HKBU) is a publicly funded
+tertiary institution with a Christian education heritage \n" /> 
+						</TableViewRow>
+					</TableViewSection>
+					<TableViewSection headerTitle="About HKBU">
+						<TableViewRow>
+							<TextArea id="textArea2" />
+						</TableViewRow>
+					</TableViewSection> -->
+					<TableViewRow title="Login" onClick="buttonClick"/>
+					<TableViewRow title="Registered Event"/>
+					<TableViewRow title="About Us"/>
+				 </TableView>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

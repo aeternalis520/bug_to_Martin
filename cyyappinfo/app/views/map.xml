@@ -1,0 +1,7 @@
+<Alloy>
+	<Collection src="Venue"/>
+	<Window id="win">
+		<Module id="mapView" module="ti.map" method="createView" userLocation="true" 
+					dataCollection="Venue" dataFilter="locationFilter" dataTransform="transform"  />
+	</Window>
+</Alloy>
